@@ -16,26 +16,26 @@ class Test
 
     public function test_demand(){
         $person = new Person();
-        $person->getName('Ahmed');
-        $person->getId(12);
-        $person->getAmount(14.3);
+        $person->setName('Ahmed');
+        $person->setId(12);
+        $person->setAmount(14.3);
         $this->manager->setDemander($person);
 
         $person = new Person();
-        $person->getName('Aya');
-        $person->getId(32);
-        $person->getAmount(64.9);
+        $person->setName('Aya');
+        $person->setId(32);
+        $person->setAmount(64.9);
         $this->manager->setDemander($person);
 
 
         $person = new Person();
-        $person->getName('Anas');
-        $person->getId(21);
-        $person->getAmount(890.8);
+        $person->setName('Anas');
+        $person->setId(21);
+        $person->setAmount(890.8);
         $this->manager->setDemander($person);
 
 
-        var_dump($this->manager->getDemander());
+        print_r($this->manager->getDemander());
         echo '<br/>';
 
         echo $this->manager->sum();
