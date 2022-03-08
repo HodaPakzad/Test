@@ -7,7 +7,7 @@ require_once 'Person.php';
     private $demandAmount;
 
 
-    public function getDemander(): float
+    public function getDemander(): array
     {
         return $this->demander;
     }

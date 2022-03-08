@@ -11,7 +11,7 @@ class Test
 
     public function __construct()
     {
-        $this->manager = new Person();
+        $this->manager = new Demand();
     }
 
     public function test_demand(){
@@ -38,7 +38,7 @@ class Test
         var_dump($this->manager->getDemander());
         echo '<br/>';
 
-        echo sum();
+        echo $this->manager->sum();
 
 
     }
