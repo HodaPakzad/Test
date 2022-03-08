@@ -19,20 +19,20 @@ class Test
         $person->getName('Ahmed');
         $person->getId(12);
         $person->getAmount(14.3);
-        $this->manager->setdemander($person);
+        $this->manager->setDemander($person);
 
         $person = new Person();
         $person->getName('Aya');
         $person->getId(32);
         $person->getAmount(64.9);
-        $this->manager->setdemander($person);
+        $this->manager->setDemander($person);
 
 
         $person = new Person();
         $person->getName('Anas');
         $person->getId(21);
         $person->getAmount(890.8);
-        $this->manager->setdemander($person);
+        $this->manager->setDemander($person);
 
 
         var_dump($this->manager->getDemander());
@@ -44,3 +44,5 @@ class Test
     }
 
 }
+$test= new Test();
+$test->test_demand();
