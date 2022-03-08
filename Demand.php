@@ -1,6 +1,6 @@
 <?php
 require_once 'Person.php';
-abstract class Demand extends Person implements ITransaction
+ class Demand extends Person implements ITransaction
 
 {
     private $demander=[];
