@@ -46,23 +46,18 @@ class Test
     }
     public function test_debat(){
         $person = new Person();
-        $person->setName('Ahmed');
-        $person->setId(12);
-        $person->setAmount(14.3);
+        $person->setName('Mounir');
+        $person->setId(13);
+        $person->setAmount(514.3);
         $this->manager2-> setDebator($person);
 
         $person = new Person();
         $person->setName('Aya');
-        $person->setId(32);
-        $person->setAmount(64.9);
+        $person->setId(24);
+        $person->setAmount(1.76);
         $this->manager2->setDebator($person);
 
 
-        $person = new Person();
-        $person->setName('Anas');
-        $person->setId(21);
-        $person->setAmount(890.8);
-        $this->manager2->setDebator($person);
 
 
         print_r($this->manager2->getDebator());
