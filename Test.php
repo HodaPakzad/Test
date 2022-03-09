@@ -70,6 +70,12 @@ class Test
 
 
     }
+    public function finance_status()
+    {
+        $test = new Test();
+        $financeresult=$test->test_demand()->sum()-$test->test_debat->sum();
+        echo $financeresult;
+    }
 
 }
 $test= new Test();
@@ -79,11 +85,6 @@ $test->test_demand();
 $test= new Test();
 $test->test_debat();
 
-public function fiance_status()
-{
-    $test = new Test();
-    $financeresult=$test->test_demand()->sum()-$test->test_debat->sum();
-    echo $financeresult;
-}
 
-finance_staus;
+$test= new Test();
+$test->finance_staus();
