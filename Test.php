@@ -89,4 +89,4 @@ $test->test_debat();
 
 
 $test= new Test();
-$test->finance_staus();
+$test->finance_status();
