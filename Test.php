@@ -85,3 +85,5 @@ public function fiance_status()
     $financeresult=$test->test_demand()->sum()-$test->test_debat->sum();
     echo $financeresult;
 }
+
+finance_staus;
