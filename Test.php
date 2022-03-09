@@ -74,8 +74,8 @@ class Test
     }
     public function finance_status()
     {
-        $test = new Test();
-        $financeresult=$test->test_demand()->sum()-$test->test_debat->sum();
+
+        $financeresult=$this->manager1->sum()-$this->manager2->sum();
         echo $financeresult;
     }
 
