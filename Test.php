@@ -75,3 +75,5 @@ public function test_debat(){
 
 
 }
+$test= new Test();
+$test->test_debat();
