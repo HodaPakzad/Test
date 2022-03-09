@@ -46,3 +46,32 @@ class Test
 }
 $test= new Test();
 $test->test_demand();
+
+public function test_debat(){
+    $person = new Person();
+    $person->setName('Ahmed');
+    $person->setId(12);
+    $person->setAmount(14.3);
+    $this->manager->setDebator($person);
+
+    $person = new Person();
+    $person->setName('Aya');
+    $person->setId(32);
+    $person->setAmount(64.9);
+    $this->manager->setDebator($person);
+
+
+    $person = new Person();
+    $person->setName('Anas');
+    $person->setId(21);
+    $person->setAmount(890.8);
+    $this->manager->setDebator($person);
+
+
+    print_r($this->manager->getDebator());
+    echo '<br/>';
+
+    echo $this->manager->sum();
+
+
+}
