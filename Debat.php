@@ -1,6 +1,6 @@
 <?php
 require_once 'Person.php';
-abstract class Debat extends Person implements ITransaction
+ class Debat extends Person implements ITransaction
 {
     private $debator =[];
     private $debatAmount=0;//if we should initialized the variables?
@@ -18,7 +18,7 @@ abstract class Debat extends Person implements ITransaction
     public function sum()
     {
         $person = new Person();
-        foreach($this->debater as $person)
+        foreach($this->debator as $person)
         {
             $this->debatAmount+=$person->getAmount();
         }

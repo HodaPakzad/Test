@@ -7,11 +7,13 @@ require_once 'Demand.php';
 
 class Test
 {
-    public $manager;
+    public $manager1;
+    public $manager2;
 
     public function __construct()
     {
-        $this->manager = new Demand();
+        $this->manager1 = new Demand();
+        $this->manager2 = new Debat();
     }
 
     public function test_demand(){
@@ -19,26 +21,26 @@ class Test
         $person->setName('Ahmed');
         $person->setId(12);
         $person->setAmount(14.3);
-        $this->manager->setDemander($person);
+        $this->manager1->setDemander($person);
 
         $person = new Person();
         $person->setName('Aya');
         $person->setId(32);
         $person->setAmount(64.9);
-        $this->manager->setDemander($person);
+        $this->manager1->setDemander($person);
 
 
         $person = new Person();
         $person->setName('Anas');
         $person->setId(21);
         $person->setAmount(890.8);
-        $this->manager->setDemander($person);
+        $this->manager1->setDemander($person);
 
 
-        print_r($this->manager->getDemander());
+        print_r($this->manager1->getDemander());
         echo '<br/>';
 
-        echo $this->manager->sum();
+        echo $this->manager1->sum();
 
 
     }
@@ -47,26 +49,26 @@ class Test
         $person->setName('Ahmed');
         $person->setId(12);
         $person->setAmount(14.3);
-        $this->manager->setDebator($person);
+        $this->manager2-> setDebator($person);
 
         $person = new Person();
         $person->setName('Aya');
         $person->setId(32);
         $person->setAmount(64.9);
-        $this->manager->setDebator($person);
+        $this->manager2->setDebator($person);
 
 
         $person = new Person();
         $person->setName('Anas');
         $person->setId(21);
         $person->setAmount(890.8);
-        $this->manager->setDebator($person);
+        $this->manager2->setDebator($person);
 
 
-        print_r($this->manager->getDebator());
+        print_r($this->manager2->getDebator());
         echo '<br/>';
 
-        echo $this->manager->sum();
+        echo $this->manager2->sum();
 
 
     }
